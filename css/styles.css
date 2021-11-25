@@ -810,7 +810,7 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 15px;
+  padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   background-color: var(--secondary-color);
@@ -818,6 +818,96 @@ address {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--duration) var(--timing-function);
+}
+
+.modal-title {
+  margin-bottom: 11px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--dominant-color);
+}
+
+.modal-form {
+  display: flex;
+}
+
+.label-modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--alt-text-color);
+}
+
+.input-modal {
+  margin-top: 4px;
+  padding: 12px 16px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color var(--duration) var(--timing-function);
+}
+
+.input-modal + svg {
+  transition: fill var(--duration) var(--timing-function);
+}
+
+.input-modal:focus + svg {
+  fill: var(--accent-hover-color);
+}
+
+.icons-modal {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: var(--dominant-color);
+}
+
+.comment {
+  margin-top: 4px;
+  padding: 8px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color var(--duration) var(--timing-function);
+  resize: none;
+}
+
+.comment::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.input-modal:focus,
+.comment:focus {
+  outline: none;
+  border-color: var(--accent-hover-color);
+  fill: var(--accent-hover-color);
+}
+
+.checkbox {
+  width: 15px;
+  height: 16px;
+  display: inline-block;
+  background-color: var(--dominant-color);
+}
+
+.agreement {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--alt-text-color);
+}
+
+.conditions {
+  color: var(--accent-hover-color);
 }
 
 .button-modal-close {
