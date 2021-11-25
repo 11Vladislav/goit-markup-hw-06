@@ -900,7 +900,6 @@ address {
 .icon-checkbox {
   width: 15px;
   height: 16px;
-  fill: currentColor;
 }
 
 .checkbox:checked + .check-icon {
