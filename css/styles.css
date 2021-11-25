@@ -893,11 +893,36 @@ address {
   fill: var(--accent-hover-color);
 }
 
-.checkbox {
+.check-icon {
+  margin-right: 8px;
   width: 15px;
   height: 16px;
-  display: inline-block;
-  background-color: var(--dominant-color);
+  fill: var(--secondary-color);
+  border: 2px solid var(--dominant-color);
+  border-radius: 2px;
+  transition: background-color var(--duration) var(--timing-function),
+    border-color var(--duration) var(--timing-function);
+}
+
+.icon-checkbox {
+  width: 15px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.checkbox:checked + .check-icon {
+  background-color: var(--accent-hover-color);
+  border-color: transparent;
+  background-image: url(../images/checkbox.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.label-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .agreement {
@@ -906,7 +931,7 @@ address {
   color: var(--alt-text-color);
 }
 
-.conditions {
+.agreement a {
   color: var(--accent-hover-color);
 }
 
@@ -931,4 +956,15 @@ address {
   width: 18px;
   height: 18px;
   fill: currentColor;
+}
+
+.send {
+  margin: 0;
+}
+
+.send-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
