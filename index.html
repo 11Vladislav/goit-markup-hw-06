@@ -446,11 +446,11 @@
         <section class="footer-form">
             <h2 class="sign-up">Подпишитесь на рассылку</h2>
             <form  class="signup-form">
-                <label for="e-mail" class="footer-label">
-                    <input type="e-mail" 
-                    name="E-mail" 
-                    id="e-mail" 
+                <label class="footer-label">
+                    <input
                     class="footer-input" 
+                    type="email" 
+                    name="email" 
                     placeholder="E-mail" />
                 </label>
                 <button type="submit" class="footer-button">Подписаться
@@ -491,21 +491,21 @@
                     </svg>
                 </label>
                 <label for="comment" class="label-modal">Комментарий
-                <textarea name="comment" class="comment" placeholder="Введите текст"></textarea>
+                <textarea name="comment" class="comment" id="comment" placeholder="Введите текст"></textarea>
                 </label>
                 <label class="label-agreement agreement">
                 <input type="checkbox" 
                 class="checkbox visually-hidden"
                 name="agreement"
-               ></input>
+               />
                <span class="check-icon">
                </span>
                Соглашаюсь с рассылкой и принимаю&nbsp; <a href=""> Условия договора</a>
             </label>
             <div class="send-button">
             <button type="submit" class="main-button send">Отправить</button>
-            </form>
             </div>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
