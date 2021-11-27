@@ -495,8 +495,11 @@ address {
   transition: color var(--duration) var(--timing-function);
 }
 .button-modal-close:hover,
-.button-modal-close:focus {
-  background-color: var(--accent-hover-color);
+.button-modal-close:focus,
+.close:hover,
+.close:focus {
+  border-color: var(--accent-hover-color);
+  fill: var(--accent-hover-color);
   transition: background-color var(--duration) var(--timing-function);
 }
 
